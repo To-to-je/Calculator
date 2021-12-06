@@ -13,21 +13,29 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+   
 
-            string oneMoreTime = "yes";
+            string oneMoreTime = "yes"; // the variable for looping the program unless you will want to stop
+
+
 
             while (oneMoreTime == "yes")
             {
 
                 Console.WriteLine("Hello and welcome to the Calculator");
 
+                // declare variable to use it in try/catch
                 double answer = 1;
                 
                 Console.WriteLine("\n Please type the 1st number: \n");
 
+                // looping condition
                 bool statement1 = false;
+
+                // declare variable to use it in try/catch
                 double input1 = 1;
 
+                // looping unless you enter the right value
                 while (statement1 == false)
                 {
                     try
@@ -44,6 +52,8 @@ namespace Calculator
 
                 Console.WriteLine("\n Please type the 2nd number: \n");
 
+
+                // the same procedure as for 1st number
 
                 bool statement2 = false;
                 double input2 = 1;
@@ -64,9 +74,16 @@ namespace Calculator
                 Console.WriteLine("\n Please, type the arithmetic operator " +
                     "\n (+, -, /, *) \n");
 
+
+
+                // thanks to this string we will check if the operator is right one
+
                 string[] symbols = { "+", "-", "*", "/" };
 
                 bool statement3 = false;
+
+                
+                // loop for the right input and switch for different arithmetic operations
 
                 while (statement3 == false)
                 {
@@ -121,6 +138,9 @@ namespace Calculator
 
                 bool statement4 = false;
 
+
+                // lets check if the user wants to continue having fun
+
                 while (statement4 == false)
                 {
                     Console.WriteLine("\n Do you want to continue? (type 'yes' or 'no' )");
@@ -150,6 +170,7 @@ namespace Calculator
                 
 
             }
+
 
         }
     }
