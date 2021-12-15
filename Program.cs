@@ -64,7 +64,6 @@ namespace Calculator
                 result = foundOperator.MustDoOperation(num1, num2);
                 }
 
-                calculator.PrintOut("\n  answer is "+ Convert.ToString(result));
 
                 (numDefined, userContinue) = calculator.OperationContinue(out numDefined, out userContinue);
                 

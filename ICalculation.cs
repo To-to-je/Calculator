@@ -34,6 +34,7 @@ namespace Calculator
         {
 
             double answer = input1 - input2;
+            Console.WriteLine($"\n Answer is {answer}");
 
             return answer;
 
@@ -48,6 +49,7 @@ namespace Calculator
         {
 
             double answer = input1 + input2;
+            Console.WriteLine($"\n Answer is {answer}");
 
             return answer;
 
@@ -62,10 +64,22 @@ namespace Calculator
 
         public double MustDoOperation(double input1, double input2)
         {
+            if(input2 != 0)
+            {
+                double answer = input1 / input2;
+                Console.WriteLine($"\n Answer is {answer}");
+                return answer;
 
-            double answer = input1 / input2;
+            }
+            else
+            {
+                Console.WriteLine("\n Division on zero is not allowed!");
+                return input1;
+            }
 
-            return answer;
+            
+
+            
 
         }
 
@@ -82,6 +96,7 @@ namespace Calculator
         {
 
             double answer = input1 * input2;
+            Console.WriteLine($"\n Answer is {answer}");
 
             return answer;
 

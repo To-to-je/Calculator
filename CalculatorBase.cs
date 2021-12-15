@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    internal class CalculatorBase : ICalculation
+    public class CalculatorBase : ICalculation
     {
         public void PrintOut(string words)
         {
